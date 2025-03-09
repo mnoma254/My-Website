@@ -1,0 +1,22 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "A simple web application demonstrating HTML, CSS, and JavaScript integration.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
