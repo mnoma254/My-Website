@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: #cecece; /* Set background color to white */
+    /* Ensure the image file exists at the specified path */
+    background-size: cover; /* Ensure the background covers the entire area */
+    font-weight: bold; /* Make all text bold */
+}
+
+header {
+    /* background: #ff0062; */
+    color: #ff0062;
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+    border-radius: 0px; /* Add border radius */
+    margin: 0 auto; /* Center the header */
+    font-weight: bold; /* Make header text bold */
+    text-transform: uppercase; /* Make header text uppercase */
+}
+
+h1 {
+    margin: 0;
+    font-weight: bold; /* Make h1 text bold */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #0044ff;
+    text-decoration: unset;
+    font-weight: bold; /* Make navigation links bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#home {
+    text-align: center; /* Align text to the center */
+    text-transform: uppercase; /* Use uppercase text */
+    color: rgb(38, 0, 255); /* Changed text color to yellow */
+    font-weight: bold; /* Make home section text bold */
+    font-family: 'Courier New'; /* Set font family */
+    font-size: 25px; /* Set font size */
+}
+
+#about {
+    text-align: left; /* Align text to the left */
+    text-transform: uppercase; /* Use uppercase text */
+    color: rgb(30, 255, 0); /* Changed text color to white */
+    width: 80%; /* Set width */
+    margin: 0 auto; /* Center the section */
+    border-radius: 10px; /* Round corners */
+    background: linear-gradient(135deg, #0c0018, #000000); /* Add diagonal gradient background */
+    font-weight: bold; /* make about section text bold */
+}
+
+#about h2 {
+    text-align: center; /* Align the title to the center */
+    color: rgb(0, 247, 255); /* Change the title color to orange */
+    font-size: 30px; /* Set font size */
+    text-decoration: underline; /* Underline the title */
+}
+
+#contacts {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding */
+    background: linear-gradient(135deg, #013f3c, #000000); /* Add diagonal gradient background */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Center the section */
+    width: 22%; /* Set width */
+}
+
+#contacts h2 {
+    text-transform: uppercase; /* Make the title uppercase */
+    text-align: center; /* Align the title to the center */
+    color: orange; /* Change the title color to orange */
+    text-decoration: underline; /* Underline the title */
+    font-style: italic; /* Italicize the title */
+}
+
+#contacts a {
+    color: rgb(0, 255, 0); /* Set the default link color to pink */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#contacts a:hover {
+    color: rgb(255, 209, 4); /* Change the link color to green on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#contacts i {
+    color: pink; /* Set the icon color to pink */
+}
+
+#contacts p {
+    text-transform: initial; /* Make the subtitles uppercase */
+}
+
+#projects {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding */
+    background: linear-gradient(135deg, #40d9ff, #1e90ff); /* Add diagonal gradient background */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Center the section */
+    width: 80%; /* Set width */
+}
+
+#projects h2 {
+    text-align: center; /* Align text to the center */
+    text-transform: uppercase; /* Use uppercase text */
+    color: #ff0357; /* Set text color */
+    font-weight: bold; /* Make heading text bold */
+    text-decoration: underline; /* Underline the title */
+}
+
+.project-item {
+    margin-bottom: 20px; /* Add space between projects */
+}
+
+.project-item h3 {
+    color: #ff0077; /* Set project title color */
+    font-weight: bold; /* Make project title bold */
+}
+
+.project-item p {
+    color: #ff0000; /* Set project description color */
+}
+
+#testimonials {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding */
+    background-color: #0e0901; /* Add background color for contrast */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Center the section */
+    width: 70%; /* Set width */
+}
+
+#testimonials h2 {
+    text-align: center; /* Align text to the center */
+    text-transform: uppercase; /* Use uppercase text */
+    color: #2bff00; /* Set text color */
+    text-decoration: underline; /* Underline the text */
+    font-style: italic; /* Italicize the text */
+    font-weight: bold; /* Make heading text bold */
+}
+
+.testimonial-item {
+    margin-bottom: 20px; /* Add space between testimonials */
+    font-style: bold; /* Italicize testimonial text */
+    color: #fbff00; /* Set testimonial text color */
+}
+
+#comments {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding */
+    background: linear-gradient(135deg, #1b0c19, #000000); /* Add diagonal gradient background */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Center the section */
+    width: 30%; /* Set width */
+}
+
+#comments h2 {
+    text-align: center; /* Align text to the center */
+    text-transform: uppercase; /* Use uppercase text */
+    color: #4cff05; /* Set text color */
+    font-weight: bold; /* Make heading text bold */
+}
+
+#comments form {
+    margin-bottom: 20px; /* Add space below the form */
+}
+
+#comments label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add space below labels */
+    color: yellow; /* Set label color to yellow */
+}
+
+#comments input[type="email"],
+#comments textarea {
+    width: 80%; /* Make input and textarea full width */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add space below input and textarea */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+#comments button {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; /* Make button text bold */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#comments button:hover {
+    background: #c0392b;
+}
+
+.comment-item {
+    margin-bottom: 20px; /* Add space between comments */
+    font-style: italic; /* Italicize comment text */
+    color: #00c3ff; /* Set comment text color */
+}
+
+#register {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding */
+    background-color: #1b0c19; /* Add background color for contrast */
+    border-radius: 20px; /* Add border radius */
+    margin: 20px auto; /* Center the section */
+    width: 30%; /* Set width */
+}
+
+#register h2 {
+    text-align: center; /* Align text to the center */
+    text-transform: uppercase; /* Use uppercase text */
+    color: #4cff05; /* Set text color */
+    font-weight: bold; /* Make heading text bold */
+}
+
+#register form {
+    margin-bottom: 20px; /* Add space below the form */
+}
+
+#register label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add space below labels */
+    color: yellow; /* Set label color to yellow */
+}
+
+#register input[type="text"],
+#register input[type="email"],
+#register input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add space below input fields */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+#register button {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0; /* Remove border radius to make square corners */
+    font-weight: bold; /* Make button text bold */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#register button:hover {
+    background: #c0392b;
+}
+
+footer {
+    background: #152e3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold; /* Make footer text bold */
+}
+
+.button {
+    display: ruby-base-container;
+    font-size: 16px;
+    color: #ffffff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; /* Make button text bold */
+}
+
+.button:hover {
+    background: #c0392b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+.skills-subtitle {
+    color: rgb(2, 192, 255); /* Set the subtitle color to light blue */
+    text-align: center; /* Align text to the center */
+    font-family: 'Courier New', Courier, monospace; /* Set font family */
+    font-size: 25px; /* Set font size */
+}
+
+.experience-subtitle {
+    color: rgb(2, 192, 255); /* Set the subtitle color to light blue */
+    text-align: center; /* Align text to the center */
+    font-family: 'Courier New', Courier, monospace; /* Set font family */
+    font-size: 25px; /* Set font size */
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.overlay-content h2 {
+    margin-top: 0;
+}
+
+.overlay-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.overlay-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-content label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.overlay-content input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.overlay-content .button {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay-content .button:hover {
+    background: #c0392b;
+}
