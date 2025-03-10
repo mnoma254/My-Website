@@ -291,11 +291,11 @@ footer {
     padding: 10px 0;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
-    position: relative;
+    position: relative; /* Change to fixed position */
     bottom: 0;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%; /* Set width to 100% */
     font-weight: bold; /* Make footer text bold */
+    z-index: 1000; /* Ensure footer is above other content */
 }
 
 .button {
@@ -442,10 +442,111 @@ html {
         width: 100%; /* Make buttons full width */
         padding: 15px; /* Adjust padding */
     }
+}
 
-    .points-display {
-        top: 20px; /* Adjust position */
-        right: 20px; /* Adjust position */
-        font-size: 18px; /* Adjust font size */
+/* Drip effect */
+.drip-effect {
+    position: relative;
+    display: inline-block;
+    color: #ff0062;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.drip-effect::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #ff0062;
+    border-radius: 50%;
+    animation: drip 1.5s infinite;
+}
+
+@keyframes drip {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
     }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff004c;
+}
+
+.header-icons {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px; /* Add space between icons */
+}
+
+.toggle-icon {
+    font-size: 24px;
+    cursor: pointer;
+    top: 20%;
+    color: #0004ff;
+    margin-bottom: 10px;
+}
+
+/* Portrait mode styles */
+.portrait-mode body {
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.portrait-mode header {
+    width: 100%; /* Make header full width */
+    font-size: 24px; /* Adjust font size */
+}
+
+.portrait-mode .container {
+    width: 100%; /* Make container full width */
+    padding: 10px; /* Add padding */
+}
+
+.portrait-mode #about, 
+.portrait-mode #projects, 
+.portrait-mode #contacts, 
+.portrait-mode #testimonials, 
+.portrait-mode #comments {
+    width: 100%; /* Make sections full width */
+    margin: 10px 0; /* Add margin */
+    padding: 10px; /* Add padding */
+}
+
+.portrait-mode #contacts {
+    width: 100%; /* Make contacts section full width */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Add margin */
+}
+
+.portrait-mode .button {
+    width: 100%; /* Make buttons full width */
+    padding: 15px; /* Adjust padding */
+}
+
+.portrait-mode .points-display {
+    top: 20px; /* Adjust position */
+    right: 20px; /* Adjust position */
+    font-size: 18px; /* Adjust font size */
 }

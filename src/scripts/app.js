@@ -36,4 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
     slideInElements.forEach(element => {
         observer.observe(element);
     });
+
+    const pointsDisplay = document.getElementById('pointsDisplay');
+    let points = 0;
+
+    const registerForm = document.getElementById('registerForm');
+    if (registerForm) {
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            points += 10; // Award 10 points for signing in
+            pointsDisplay.textContent = `Points: ${points}`;
+            alert('You have been awarded 10 points!');
+        });
+    }
+
+    const togglePortraitButton = document.getElementById('togglePortrait');
+    togglePortraitButton.addEventListener('click', () => {
+        document.body.classList.toggle('portrait-mode');
+    });
 });
