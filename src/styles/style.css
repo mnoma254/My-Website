@@ -285,10 +285,12 @@ nav ul li a:hover {
 }
 
 footer {
-    background: #152e3d;
-    color: #ffffff;
+    background: linear-gradient(to bottom, #333333, #000000);
+    color: #18ff03;
     text-align: center;
     padding: 10px 0;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
     position: relative;
     bottom: 0;
     width: 80%;
@@ -407,3 +409,31 @@ html {
 .overlay-content .button:hover {
     background: #c0392b;
 }
+
+/* Media query for portrait mode */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    header {
+        width: 100%; /* Make header full width */
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .container {
+        width: 100%; /* Make container full width */
+        padding: 10px; /* Add padding */
+    }
+
+    #about, #projects, #contacts, #testimonials, #comments {
+        width: 100%; /* Make sections full width */
+        margin: 10px 0; /* Add margin */
+        padding: 10px; /* Add padding */
+    }
+
+        .button {
+            width: 100%; /* Make buttons full width */
+            padding: 15px; /* Adjust padding */
+        }
+    }
