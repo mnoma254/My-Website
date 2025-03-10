@@ -432,8 +432,20 @@ html {
         padding: 10px; /* Add padding */
     }
 
-        .button {
-            width: 100%; /* Make buttons full width */
-            padding: 15px; /* Adjust padding */
-        }
+    #contacts {
+        width: 100%; /* Make contacts section full width */
+        padding: 10px; /* Add padding */
+        margin: 10px 0; /* Add margin */
     }
+
+    .button {
+        width: 100%; /* Make buttons full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .points-display {
+        top: 20px; /* Adjust position */
+        right: 20px; /* Adjust position */
+        font-size: 18px; /* Adjust font size */
+    }
+}
